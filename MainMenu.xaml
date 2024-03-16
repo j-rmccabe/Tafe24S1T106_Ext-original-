@@ -8,24 +8,24 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
+    <Grid Background="Beige">
 		<StackPanel>
 			<StackPanel>
 				<Image Source="/images/abacus.PNG" Width="100" HorizontalAlignment="Right" Margin="0,30,0,0" />
 			</StackPanel>
 			<StackPanel>
 				<!-- Contains title text block-->
-				<TextBlock Text="Universal Calculator" HorizontalAlignment="Center" FontSize="72" Margin="0,170,0,20"/>
+				<TextBlock Text="Universal Calculator" HorizontalAlignment="Center" FontSize="72" Margin="0,0,0,10" Foreground="#FF0E409F"/>
 			</StackPanel>
-			<StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+			<StackPanel HorizontalAlignment="Center">
 				<!-- Contains math calculator and Mortgage calcualtor buttons-->
-				<Button x:Name="mathCalculatorButton" Content="Math Calculator" FontSize="48" Margin="0,0,10,10" Width="460" Height="100"/>
-				<Button x:Name="mortgageCalculatorButton" Content="Mortgage Calcualtor" FontSize="48" Margin="10,0,0,10" Width="460" Height="100"/>
+				<Button x:Name="mathCalculatorButton" Content="Math Calculator" FontSize="48" Margin="0,0,10,10" Width="460" Height="100" Foreground="Black" Background="#33F13838"/>
+				<Button x:Name="mortgageCalculatorButton" Content="Mortgage Calcualtor" FontSize="48" Margin="0,0,0,10" Width="460" Height="100" Foreground="Black" Background="#33F13838"/>
 			</StackPanel>
-			<StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+			<StackPanel HorizontalAlignment="Center" Height="220.8" Width="470.4">
 				<!-- Contains currency calculator and exit buttons-->
-				<Button x:Name="currencyCalculatorButton" Content="Currency Calculator" FontSize="48" Margin="0,10,10,0" Width="460" Height="100"/>
-				<Button x:Name="exitButton" Content="Exit" FontSize="48" Margin="10,10,0,0" Width="460" Height="100"/>
+				<Button x:Name="currencyCalculatorButton" Content="Currency Calculator" FontSize="48" Width="460" Height="100" Margin="0,0,0,10" Foreground="Black" Background="#33F13838"/>
+				<Button x:Name="exitButton" Content="Exit" FontSize="48" Width="460" Height="100" Foreground="Black" BorderBrush="#33F13838" Background="#33F13838"/>
 			</StackPanel>
 		</StackPanel>
 	</Grid>
