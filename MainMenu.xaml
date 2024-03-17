@@ -24,8 +24,8 @@
 			</StackPanel>
 			<StackPanel HorizontalAlignment="Center" Height="220.8" Width="470.4">
 				<!-- Contains currency calculator and exit buttons-->
-				<Button x:Name="currencyCalculatorButton" Content="Currency Calculator" FontSize="48" Width="460" Height="100" Margin="0,0,0,10" Foreground="Black" Background="#33F13838"/>
-				<Button x:Name="exitButton" Content="Exit" FontSize="48" Width="460" Height="100" Foreground="Black" BorderBrush="#33F13838" Background="#33F13838"/>
+				<Button x:Name="currencyCalculatorButton" Content="Currency Calculator" FontSize="48" Width="460" Height="100" Margin="0,0,0,10" Foreground="Black" Background="#33F13838" Click="currencyCalculatorButton_Click"/>
+				<Button x:Name="exitButton" Content="Exit" FontSize="48" Width="460" Height="100" Foreground="Black" BorderBrush="#33F13838" Background="#33F13838" Click="exitButton_Click"/>
 			</StackPanel>
 		</StackPanel>
 	</Grid>
