@@ -35,7 +35,14 @@ namespace Calculator
 
 		private void Button_Click(object sender, RoutedEventArgs e)
 		{
-			amount = float.Parse(amountTextBox.Text);
+			try
+			{
+				amount = float.Parse(amountTextBox.Text);
+			}
+			catch(Exception E)
+			{
+				outputTextBlock.Text = "Error";
+			}
 			from = fromComboBox.SelectedValue.ToString();
 			to = toComboBox.SelectedValue.ToString();
 
@@ -108,8 +115,11 @@ namespace Calculator
 			{
 				outputTextBlock.Text = "Error";
 			}
-
-
 		}
-    }
+
+		private void Button_Click_1(object sender, RoutedEventArgs e)
+		{
+			this.Frame.Navigate(typeof(MainMenu));
+		}
+	}
 }
