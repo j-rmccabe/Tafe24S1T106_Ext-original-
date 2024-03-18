@@ -30,6 +30,12 @@ namespace Calculator
 		{
 			this.Frame.Navigate(typeof(MortgageCalculator));
 		}
+  
+  		private async void tripCalcButton_Click(object sender, RoutedEventArgs e)
+		{
+			var dialog = new MessageDialog("Trip calculator C# code will be developed later.");
+			await dialog.ShowAsync();
+		}
 
 		private void currencyCalculatorButton_Click(object sender, RoutedEventArgs e)
 		{
