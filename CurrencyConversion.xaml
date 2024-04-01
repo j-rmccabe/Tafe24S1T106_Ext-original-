@@ -13,11 +13,13 @@
 			<StackPanel><!-- Contains title text block-->
 				<TextBlock Text="Currency Conversion Calculator" FontSize="70" HorizontalAlignment="Center" FontWeight="Bold"/>
 			</StackPanel>
+			
 			<StackPanel Orientation="Horizontal" HorizontalAlignment="Center"><!--Contains stackpanels of Text blocks/boxes for input-->
 				<StackPanel Margin="0,0,10,0">
 					<TextBlock Text="Amount" FontSize="72" Width="300" TextAlignment="Center"/>
 					<TextBox x:Name="amountTextBox" FontSize="48"/>
 				</StackPanel>
+				
 				<StackPanel Margin="10,0,0,0">
 					<TextBlock Text="From" FontSize="72" Width="300" TextAlignment="Center"/>
 					<ComboBox x:Name="fromComboBox" Width="300" SelectedIndex="0" Height="76.8" SelectedValuePath="Content">
@@ -27,6 +29,7 @@
 						<ComboBoxItem Content="INR - Indian Rupee" Tag="INR"/>
 					</ComboBox>
 				</StackPanel>
+				
 				<StackPanel Margin="10,0,0,0">
 					<TextBlock Text="To" FontSize="72" Width="300" TextAlignment="Center"/>
 					<ComboBox x:Name="toComboBox" Height="76.8" Width="300" SelectedIndex="1" SelectedValuePath="Content">
@@ -36,6 +39,7 @@
 						<ComboBoxItem Content="INR - Indian Rupee" Tag="INR"/>
 					</ComboBox>
 				</StackPanel>
+				
 			</StackPanel>
 			<StackPanel>
 				<TextBlock x:Name="outputTextBlock" Text="" Height="300" Margin="30,50,0,0" FontSize="36"/>
